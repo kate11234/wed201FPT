@@ -9,13 +9,15 @@ body {
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #5cabeb;
   padding: 10px;
 }
 
 nav {
   background-color: #333;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -29,7 +31,13 @@ footer {
   padding: 10px;
 }
 
-li {
+ul {
+  list-style: none; 
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
   display: block;
   width: 150px;
   margin-bottom: 5px;
