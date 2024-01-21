@@ -1,0 +1,97 @@
+/* Reset default margin and padding for all elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a font family and font size to the entire body */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Style the header tag with a background color */
+  header {
+    background-color: #8655f8;
+    padding: 10px;
+  }
+  
+  /* Add "Skip to Main Content" link */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Style the navigation bar with a background color and display as inline-block */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    display: inline-block;
+    width: 80%;
+  }
+  
+  /* Style the images in the navigation to have a width of about 10% */
+  nav img {
+    width: 10%;
+  }
+  
+  /* Style the main content area with a background color and font size */
+  main {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  /* Style the footer with a background color */
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  /* Comment out the existing styling for the li element */
+  /* li {
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+  } */
+  
+  /* Style the heading tags (h1) with text alignment, font family, and color properties */
+  h1 {
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    color: #4a90e2;
+  }
+  
+  /* Style the paragraphs with a modified line height property */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Style the grid class to use a two-column grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 20px;
+  }
+  
+  /* Style the images in the grid class to have a width of 100% */
+  .grid img {
+    width: 100%;
+  }
+  
+  /* Adjust the grid class for the desired look */
+  /* Play with justify-content, align-items, and row-gap property values */
+  .grid {
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  
+  /* Style the flex class to use flex */
+  .flex {
+    display: flex;
+    /* Play with flex-wrap and justify-content property values */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
