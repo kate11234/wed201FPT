@@ -1,0 +1,51 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 2px solid #333; 
+    padding: 10px; 
+    border-radius: 10px; 
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; 
+    padding: 10px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+  }
+  
+  header a:hover {
+    color: #ff8c00; 
+  }
+
+  section:nth-child(even) img {
+    border-radius: 0; 
+  }
+  
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .skip-link:focus {
+    left: auto;
+    margin: 10px; 
+    background-color: #ff8c00;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
