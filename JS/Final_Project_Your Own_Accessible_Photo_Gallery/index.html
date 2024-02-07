@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My project Interactive</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__wrapper">
+        <div class="left-box">
+          <p id="placeholderText">Hover img</p>
+          <div class="preview-box">
+            <img id="imgPre" src="./img/def.jpg" alt="default" />
+          </div>
+        </div>
+        <div class="right-box">
+          <div class="scroll-bar">
+            <img
+              class="thumbnail"
+              src="./img/image1.jpg"
+              alt="Image 1"
+              onmouseover="preImg('./img/image1.jpg','pic 1' )"
+              onmouseout="reImg()"
+            />
+            <img
+              class="thumbnail"
+              src="./img/image2.jpg"
+              alt="Image 2"
+              onmouseover="preImg('./img/image2.jpg','pic 2' )"
+              onmouseout="reImg()"
+            />
+            <img
+              class="thumbnail"
+              src="./img/image3.jpg"
+              alt="Image 3"
+              onmouseover="preImg('./img/image3.jpg','pic 3' )"
+              onmouseout="reImg()"
+            />
+            <img
+              class="thumbnail"
+              src="./img/image4.jpg"
+              alt="Image 4"
+              onmouseover="preImg('./img/image4.jpg','pic 4' )"
+              onmouseout="reImg()"
+            />
+            <img
+              class="thumbnail"
+              src="./img/image5.jpg"
+              alt="Image 5"
+              onmouseover="preImg('./img/image5.jpg','pic 5' )"
+              onmouseout="reImg()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
