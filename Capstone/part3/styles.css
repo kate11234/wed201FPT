@@ -1,0 +1,87 @@
+/* Các điều chỉnh chung */
+body {
+  padding: 0;
+  margin: 0 auto;
+}
+
+header,
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin-top: 30px;
+}
+
+.block {
+  width: 300px;
+  padding: 0 10px;
+}
+
+.title {
+  width: 1500px;
+}
+
+.title p {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.block_item {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Thêm max-width để tránh tràn nội dung ở màn hình nhỏ */
+  height: 500px;
+  display: grid;
+}
+
+.block_item img {
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử cha */
+  max-width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Hiệu ứng hover chỉ áp dụng cho các thiết bị máy tính */
+@media (min-width: 768px) {
+  .block_item img:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.13);
+    transform: scale(1.2);
+    z-index: 1;
+  }
+}
+
+/* Điều chỉnh cho điện thoại di động */
+@media (max-width: 480px) {
+  .title {
+    width: 350px;
+  }
+  .title p {
+    font-size: 1.2em;
+  }
+  .container {
+    display: grid;
+  }
+  .block {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid black;
+  }
+  .block_item {
+    display: grid;
+  }
+  .block_item img:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.13);
+    transform: scale(1.2);
+    z-index: 1;
+  }
+}
